@@ -25,22 +25,15 @@
 package org.spongepowered.api.statistic;
 
 import org.spongepowered.api.CatalogType;
+import org.spongepowered.api.block.BlockType;
+import org.spongepowered.api.entity.Entity;
+import org.spongepowered.api.item.ItemType;
 import org.spongepowered.api.text.translation.Translatable;
-import org.spongepowered.api.util.annotation.CatalogedBy;
 
 /**
- * Represents a group of statistics which may be used to logically group
- * statistics or define expandable sets of statistics for objects such as items.
+ * Represents a universal statistic for the entire running platform. Typically
+ * on a {@link ItemType}, {@link BlockType}, or {@link Entity}.
  */
-@CatalogedBy(StatisticGroups.class)
-public interface StatisticGroup extends CatalogType, Translatable {
-
-    /**
-     * Gets the default {@link StatisticFormat} which all statistics without
-     * defined format overrides should be formatted with.
-     *
-     * @return The format for statistics in this group
-     */
-    StatisticFormat getDefaultStatisticFormat();
+public interface UniversalStatistic extends CatalogType, Translatable {
 
 }

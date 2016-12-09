@@ -24,36 +24,31 @@
  */
 package org.spongepowered.api.statistic;
 
-import org.spongepowered.api.text.format.TextColor;
-import org.spongepowered.api.text.translation.Translation;
+import static org.spongepowered.api.util.generator.dummy.DummyObjectProvider.createFor;
 
-import javax.annotation.Nullable;
+public final class UniversalStatistics {
 
-/**
- * Represents a {@link Statistic} for a team's {@link TextColor}.
- */
-public interface TeamStatistic extends Statistic {
+    // SORTFIELDS:ON
 
-    /**
-     * Gets the team's {@link TextColor} this {@link Statistic} measures.
-     *
-     * @return The team's text color this statistic measures
-     */
-    TextColor getTeamColor();
+    public static final UniversalStatistic BLOCKS_BROKEN = createFor(UniversalStatistic.class, "BLOCKS_BROKEN");
 
-    /**
-     * Represents a builder to create new and custom instances of
-     * {@link TeamStatistic}s.
-     */
-    interface Builder extends StatisticBuilder<TeamStatistic, Builder> {
+    public static final UniversalStatistic ITEMS_CRAFTED = createFor(UniversalStatistic.class, "ITEMS_CRAFTED");
 
-        /**
-         * Sets the {@link TextColor} of this {@link TeamStatistic}.
-         *
-         * @param color The color
-         * @return This builder, for chaining
-         */
-        Builder teamColor(TextColor color);
+    public static final UniversalStatistic ITEMS_USED = createFor(UniversalStatistic.class, "ITEMS_USED");
 
+    public static final UniversalStatistic ITEMS_BROKEN = createFor(UniversalStatistic.class, "ITEMS_BROKEN");
+
+    public static final UniversalStatistic ITEMS_PICKED_UP = createFor(UniversalStatistic.class, "ITEMS_PICKED_UP");
+
+    public static final UniversalStatistic ITEMS_DROPPED = createFor(UniversalStatistic.class, "ITEMS_DROPPED");
+
+    public static final UniversalStatistic ENTITIES_KILLED = createFor(UniversalStatistic.class, "ENTITIES_KILLED");
+
+    public static final UniversalStatistic KILLED_BY_ENTITY = createFor(UniversalStatistic.class, "KILLED_BY_ENTITY");
+
+    // SORTFIELDS:OFF
+
+    private UniversalStatistics() {
     }
+
 }

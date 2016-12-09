@@ -81,7 +81,6 @@ import org.spongepowered.api.scoreboard.displayslot.DisplaySlot;
 import org.spongepowered.api.scoreboard.objective.displaymode.ObjectiveDisplayMode;
 import org.spongepowered.api.statistic.Statistic;
 import org.spongepowered.api.statistic.StatisticFormat;
-import org.spongepowered.api.statistic.StatisticGroup;
 import org.spongepowered.api.statistic.achievement.Achievement;
 import org.spongepowered.api.text.chat.ChatType;
 import org.spongepowered.api.text.format.TextColor;
@@ -168,7 +167,6 @@ public final class CatalogTypes {
     public static final Class<StairShape> STAIR_SHAPE = StairShape.class;
     public static final Class<Statistic> STATISTIC = Statistic.class;
     public static final Class<StatisticFormat> STATISTIC_FORMAT = StatisticFormat.class;
-    public static final Class<StatisticGroup> STATISTIC_GROUP = StatisticGroup.class;
     public static final Class<StoneType> STONE_TYPE = StoneType.class;
     public static final Class<TextColor> TEXT_COLOR = TextColor.class;
     public static final Class<TileEntityType> TILE_ENTITY_TYPE = TileEntityType.class;
